@@ -9,11 +9,12 @@
     --padding-default: 20px;
 
     /* color swatches */
-    --color-3: #f1acf2;
-    --color-2: #914bbf;
-    --primary-color: #3e285b;
-    --color-4: #73332d;
-    --color-5: #d97059;
+    --bg-color: #546b3f;
+    --color-2: #00571a;
+    --primary-color: #539f57;
+    --color-4: #9fa66a;
+    --color-5: #e6a285;
+    --text-color: #d9d6d2;
     
 }
 
@@ -30,21 +31,6 @@
     width: var(--width-full);
 }
 
-.navigation{
-    background-color: var(--primary-color);
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* position: absolute; */
-}
-
-.fixed{
-    position: fixed;
-    top: 0px;
-    z-index: 1000;
-}
-
-.navigation-bar{
-    width: var(--width-12col);
+body{
+    background-color: var(--bg-color);
 }
