@@ -39,7 +39,7 @@ body{
 }
 
 .hero{
-    background-image: url(https://picsum.photos/1200/400);
+    background-image: url(../image/Hero-bg-img.png);
     min-height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,4 +63,7 @@ body{
 
 .hero-text{
     grid-column: 4 / span 10;
+    grid-row: 2;
+    font-size: 32px;
+    font-weight: 400;
 }
