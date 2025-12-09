@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sedgwick+Ave+Display&display=swap');
+
 :root{
 
     /* Demensions */
@@ -33,4 +35,32 @@
 
 body{
     background-color: var(--bg-color);
+    font-family: eras, sans-serif;
+}
+
+.hero{
+    background-image: url(https://picsum.photos/1200/400);
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    width: var(--width-full);
+    height: auto;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.hero-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 200px auto auto;
+    gap: var(--grid-gap);
+    width: var(--width-12col);
+    height: 100%;
+}
+
+.hero-text{
+    grid-column: 4 / span 10;
 }
