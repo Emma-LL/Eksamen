@@ -55,15 +55,32 @@ body{
 .hero-container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 200px auto auto;
+    grid-template-rows: 200px auto auto 65px;
     gap: var(--grid-gap);
     width: var(--width-12col);
     height: 100%;
 }
 
 .hero-text{
-    grid-column: 4 / span 10;
+    grid-column: 5 / span 10;
     grid-row: 2;
     font-size: 32px;
     font-weight: 400;
+}
+
+.info-box{
+    background-color: var(--text-color);
+    grid-column: 1 / span 12;
+    grid-row: 3;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.info-box h4{
+    color: var(--color-2);
+}
+
+.info-box p{
+    color: var(--color-2);
 }
