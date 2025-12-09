@@ -74,13 +74,15 @@ body{
     grid-row: 3;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
 .info-box h4{
     color: var(--color-2);
+    margin: 0 0 10px 0;
 }
 
 .info-box p{
     color: var(--color-2);
+    margin-bottom: 5px;
 }
