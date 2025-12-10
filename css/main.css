@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
 
 :root{
 
@@ -26,6 +26,11 @@
     padding: 0;
 }
 
+body{
+    background-color: var(--bg-color);
+    font-family: 'Alan Sans', sans-serif;
+}
+
 .container{
     display: grid;
     grid-template-rows: auto;
@@ -33,10 +38,7 @@
     width: var(--width-full);
 }
 
-body{
-    background-color: var(--bg-color);
-    font-family: eras, sans-serif;
-}
+
 
 .hero{
     background-image: url(../image/Hero-bg-img.png);
