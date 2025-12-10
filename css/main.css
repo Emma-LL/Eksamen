@@ -62,7 +62,7 @@ body{
 }
 
 .hero-text{
-    grid-column: 5 / span 10;
+    grid-column: 5 / span 8;
     grid-row: 2;
     font-size: 32px;
     font-weight: 400;
@@ -85,4 +85,40 @@ body{
 .info-box p{
     color: var(--color-2);
     margin-bottom: 5px;
+}
+
+.the-story{
+width: var(--width-full);
+}
+
+.the-story-content{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 200px auto auto 65px;
+    gap: var(--grid-gap);
+    width: var(--width-12col);
+    height: 100%;
+    margin: 0 auto;
+}
+
+.the-story-text{
+    grid-column: 1 / span 7;
+    grid-row: 1;
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 1.6;
+    padding: var(--padding-default) 0;
+}
+
+.the-story-image{
+    grid-column: 8 / span 5;
+    grid-row: 1;
+    min-height: 400px;
+}
+
+.the-story-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+    background-size: cover;
 }
