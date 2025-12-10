@@ -96,7 +96,7 @@ width: var(--width-full);
 .the-story-content{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 200px auto auto 65px;
+    grid-template-rows: auto;
     gap: var(--grid-gap);
     width: var(--width-12col);
     height: 100%;
@@ -123,4 +123,20 @@ width: var(--width-full);
     height: auto;
     display: block;
     background-size: cover;
+}
+
+.video-section{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 150px auto auto;
+    gap: var(--grid-gap);
+    width: var(--width-12col);
+    height: 100%;
+    margin: 0 auto;
+}
+
+.video-container{
+    grid-column: 1 / span 11;
+    grid-row: 2;
+    min-height: 400px;
 }
