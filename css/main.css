@@ -38,8 +38,7 @@ body{
     width: var(--width-full);
 }
 
-
-
+/* hero section start */
 .hero{
     background-image: url(../image/Hero-bg-img.png);
     min-height: 600px;
@@ -88,7 +87,9 @@ body{
     color: var(--color-2);
     margin-bottom: 5px;
 }
+/* hero section end */
 
+/* story section start */
 .the-story{
 width: var(--width-full);
 }
@@ -124,7 +125,9 @@ width: var(--width-full);
     display: block;
     background-size: cover;
 }
+/* story section end */
 
+/* video section start */
 .video-section{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -139,4 +142,52 @@ width: var(--width-full);
     grid-column: 1 / span 11;
     grid-row: 2;
     min-height: 400px;
+}
+/* video section end */
+
+/* cast section start */
+.cast-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 150px auto auto auto;
+    gap: var(--grid-gap);
+    width: var(--width-12col);
+    height: 100%;
+    margin: 0 auto;
+}
+
+.cast-flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cast-credit{
+    grid-column: 5 / span 4;
+    grid-row: 2;
+}
+
+.cast-costume{
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+.cast-light{
+    grid-column: 1 / span 2;
+    grid-row: 4;
+}
+
+.cast-manuscript{
+    grid-column: 6 / span 2;
+    grid-row: 3;
+}
+
+.cast-sound{
+    grid-column: 6 / span 2;
+    grid-row: 4;
+}
+
+.cast-actor{
+    grid-column: 11 / span 2;
+    grid-row: 3;
 }
