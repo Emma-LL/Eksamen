@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" media="screen">
 </head>
 <body>
   <div class="container">
@@ -126,6 +127,29 @@
   </div>
   </section>
   <!-- cast section end -->
+  <!-- content section start -->
+  <section class="content-section">
+    <div class="content-container">
+      <div class="grid">
+      <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+      
+          <div class="gallery-cell"><img src="image/1.jpeg" alt=""></div>
+            <div class="gallery-cell"><img src="image/2.jpeg" alt=""></div>
+            <div class="gallery-cell"><img src="image/3.jpeg" alt=""></div>
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
+      </div>
+      </div>
+      <script src="https://unpkg.com/flickity@v2/dist/flickity.pkgd.min.js"></script> 
+      <script src="js/main.js"></script>
+    </div>
+  </section>
+  <!-- content section end -->
+  <div class="footer">
+    <p>© 2024 Brødrene Løvehjerte. All rights reserved.</p>
+
+
   </div>
 </body>
 </html>

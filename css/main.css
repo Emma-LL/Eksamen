@@ -149,7 +149,7 @@ width: var(--width-full);
 .cast-container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 150px auto auto auto;
+    grid-template-rows: 150px auto 50px auto 50px auto;
     gap: var(--grid-gap);
     width: var(--width-12col);
     height: 100%;
@@ -169,25 +169,70 @@ width: var(--width-full);
 
 .cast-costume{
     grid-column: 1 / span 2;
-    grid-row: 3;
+    grid-row: 4;
 }
 
 .cast-light{
     grid-column: 1 / span 2;
-    grid-row: 4;
+    grid-row: 6;
 }
 
 .cast-manuscript{
     grid-column: 6 / span 2;
-    grid-row: 3;
+    grid-row: 4;
 }
 
 .cast-sound{
     grid-column: 6 / span 2;
-    grid-row: 4;
+    grid-row: 6;
 }
 
 .cast-actor{
     grid-column: 11 / span 2;
-    grid-row: 3;
+    grid-row: 4 / span 3;
+}
+
+.cast-light h2{
+    padding: 0 30px;
+}
+
+/* cast section end */
+
+/* content section start */
+.content-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 200px auto auto;
+    gap: var(--grid-gap);
+    width: var(--width-12col);
+    height: 100%;
+}
+
+/* Flickity carousel */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.gallery {
+  background-color: #eeeeee;
+  width: var(--width-12col);
+  grid-column: 1 / span 11;
+  grid-row: 2;
+}
+
+.gallery-cell {
+  /* width: 66%;
+  height:200px; */
+/*   margin: 0 10px 0 0; */
+  counter-increment: gallery-cell;
+}
+
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color:#fff;
+  /* content: counter(gallery-cell) */ 
 }
