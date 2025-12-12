@@ -222,8 +222,8 @@ width: var(--width-full);
 }
 
 .gallery-cell {
-  /* width: 66%;
-  height:200px; */
+  /* width: 66%;*/
+  /* height:200px;  */
 /*   margin: 0 10px 0 0; */
   counter-increment: gallery-cell;
 }
