@@ -17,6 +17,8 @@
     --color-4: #9fa66a;
     --color-5: #e6a285;
     --text-color: #d9d6d2;
+    --color-button: #56864bbf;
+    --color-text-dark: #00300e;
     
 }
 
@@ -79,21 +81,32 @@ body{
 }
 
 .info-box h4{
-    color: var(--color-2);
+    color: var(--color-text-dark);
     margin: 0 0 10px 0;
 }
 
 .info-box p{
-    color: var(--color-2);
+    color: var(--color-text-dark);
     margin-bottom: 5px;
 }
 
 .info-box-button button{
-    background-color: var(--color-dark);
-    border: 1px solid var(--color-grey);
+    background-color: var(--color-button);
+    border: 1px solid var(--color-button);
     border-radius: 5px;
     padding: 8px 16px;
     font-size: 12px;
+}
+
+.info-box-button button:hover{
+    border: 1px solid var(--color-text-dark);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info-box-button button a{
+    color: var(--color-text-dark);
+    text-decoration: none;
 }
 /* hero section end */
 
