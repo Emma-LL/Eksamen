@@ -33,11 +33,19 @@ body{
     font-family: 'Alan Sans', sans-serif;
 }
 
-.container{
-    display: grid;
-    grid-template-rows: auto;
-    gap: var(--grid-gap);
+    .container{
+        display: grid;
+        grid-template-rows: auto;
+        gap: var(--grid-gap);
+        width: var(--width-full);
+    }
+
+.navigation, .hero, .image-section, .footer{
     width: var(--width-full);
+}
+
+.todays_recipes, .categories, .content_area{
+    width: var(--width-12col); /* center later */
 }
 
 /* hero section start */
@@ -175,7 +183,7 @@ width: var(--width-full);
 }
 
 .video-container{
-    /* grid-column: 1 / span 11; */
+    grid-column: 1 / span 11;
     grid-row: 2;
     min-height: 400px;
 }
@@ -194,7 +202,7 @@ width: var(--width-full);
 }
 
 .cast-container p{
-    font-size: 22   px;
+    font-size: 22px;
     line-height: 1.6;
 }
 
@@ -347,13 +355,10 @@ width: var(--width-full);
 /* Footer section end */
 
 @media (width < 600px) {
-    
+
     :root {
         --width-12col: 100%;
     }
-    .hero-text{
-        grid-column: 2 / span 10;
-        font-size: 24px;
-    }
+    
 
 }
