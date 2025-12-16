@@ -400,6 +400,22 @@ width: var(--width-full);
         height: auto;
     }
 
+    .cast-credit, .cast-costume, .cast-light, .cast-manuscript, .cast-sound, .cast-actor {
+        grid-column: 1 / span 12;
+        grid-row: auto;
+        text-align: center;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+
+    .content-text{
+        grid-column: 1 / span 12;
+        grid-row: 2;
+        padding: 0 10px;
+    }
+
+    
+
 
 
 }
