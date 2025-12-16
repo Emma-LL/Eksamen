@@ -183,9 +183,9 @@ width: var(--width-full);
 }
 
 .video-container{
-    grid-column: 1 / span 11;
+    grid-column: 1 / span 12;
     grid-row: 2;
-    min-height: 400px;
+    height: 675px;
 }
 /* video section end */
 
@@ -389,5 +389,17 @@ width: var(--width-full);
     .the-story-image{
         display: none;
     }
+
+    .video-section{
+        grid-template-rows: 50px auto auto;
+    }
+
+    .video-container{
+        grid-column: 2 / span 10;
+        grid-row: 2;
+        height: auto;
+    }
+
+
 
 }
