@@ -343,18 +343,6 @@ width: var(--width-full);
     text-decoration: none;
     color: var(--color-text-dark);
 }
-
-/* .text-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.text-footer a{
-    font-weight: 400;
-    padding: 5px;
-    text-decoration: none;
-} */
 /* Footer section end */
 
 @media (width < 600px) {
