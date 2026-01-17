@@ -65,8 +65,8 @@ body{
 
 
 .hero{
-    background-image: url(../image/Hero-bg-img.png);
-    min-height: 600px;
+    background-image: url(../image/Background-image-lionheart.png);
+    min-height: 100px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -92,6 +92,7 @@ body{
     grid-row: 2;
     font-size: 32px;
     font-weight: 400;
+    color: #00571a;
 }
 
 .info-box{
@@ -168,6 +169,8 @@ width: var(--width-full);
     height: auto;
     display: block;
     background-size: cover;
+    padding: var(--padding-default) 0;
+    margin-top: 12px;
 }
 /* story section end */
 
